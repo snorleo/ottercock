@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ðŸ  </title>
+</head>
+
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+
+#title {
+	position:absolute;
+	font-size: 7em;
+	right: 80px;
+	top: -80px;
+	left: auto;
+	z-index: 1;	
+}
+
+#search {
+	position: absolute;
+	right: 80px;
+	top: 230px;
+	left: auto;
+	z-index: 1;	
+
+}
+
+
+html {
+	
+	min-height: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #fff;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;	
+}
+
+a {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+	a:hover, li:hover > a {
+		color: #FFF;
+	}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+#bg {width:100%; 	}
+#content{	position:absolute; top:0px; padding:0px }
+
+
+#menu {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+	font-size: 1.5em;
+	min-height: 1080px;
+	margin-left: 5em;
+}
+
+#menu li {
+	position: relative;
+	z-index: 1;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.5em 1em;
+	white-space: nowrap;
+	margin-top: 15px;
+}
+
+	#menu li ul {
+		position: absolute;
+		overflow: hidden;
+		display: none;
+		left: 100%;
+		top: 0.2em;
+		float: none;
+		background-image: -moz-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+		background-image: -webkit-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+		background-image: radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+	}
+	
+	#menu li:hover ul {
+		display: block;
+	}
+	
+	#menu li ul a {
+		position: relative;
+		font-size: 0.8em;
+	}
+	
+	#menu li ul a:hover:before {
+		content: "";
+		display: block;
+		width: 1em;
+		height: 1em;
+		background: rgba(0,0,0,0.75);
+		border: 1px so lid #FFF;
+		position: absolute;
+		top: 0.5em;
+		left: -0.75em;
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	
+	p span.show {display:none;}
+p:hover span.show {display:inline;}
+p:hover span.noshow {display:none;}
+
+</style>
+
+<body>
+
+
+
+<div id="title">
+<p>
+<span class="noshow">ã‚¹ã‚¿ãƒ¼ãƒˆãƒšãƒ¼ã‚¸</span><span class="show">ã‚¹ã‚¿ãƒ¼ãƒˆãƒšãƒ¼ã‚¸</span>
+</p>
+</div>
+
+
+<script>
+function showMore(){
+    document.getElementById("title").innerHTML = "<table border='0' onmouseout='showLess()'><tr><td>Startpage</td></tr></table>";
+}
+
+function showLess(){
+    document.getElementById("title").innerHTML = "<table border='0' onmouseover='showMore()'><tr><td>ã‚¹ã‚¿ãƒ¼ãƒˆãƒšãƒ¼ã‚¸</td></tr></table>";
+}
+</script>
+
+</div>
+
+
+
+
+<image id="bg" src="video/flwr.jpg" autoplay loop></image>
+<div id="content">
+<ul id="menu">
+
+    <li>
+		<a href="#">Imageboards</a>
+		<ul>
+			<li>
+				<a href="https://4chan.org">4chan</a>
+			</li>
+			<li>
+				<a href="https://boards.4chan.org/a/">/a/ - Anime</a>
+			</li>
+			<li>
+				<a href="https://boards.4chan.org/b/">/b/ - Random</a>
+			</li>
+			<li>
+				<a href="https://boards.4chan.org/c/">/c/ - Anime/Cute</a>
+			</li>
+            <li>
+				<a href="https://boards.4chan.org/w/">/w/ - Anime Wallpapers</a>
+			</li>
+			<li>
+				<a href="https://boards.4chan.org/wg/">/wg/ - Wallpaper General</a>
+			</li>
+		</ul>
+	
+	<li>
+	<li>
+		<a href="#">Animu/Mango</a>
+		<ul>
+			<li>
+				<a href="https://animeultima.tv">AnimeUltima</a>
+			</li>
+			<li>
+				<a href="https://kissmanga.com">KissManga</a>
+			</li>
+             <li>
+				<a href="https://kissmanga.com/Manga/Fairy-Tail/">Fairy Tail</a>
+			</li>
+			<li>
+				<a href="https://kissmanga.com/Manga/One-Piece/">One Piece</a>
+			</li>
+			<li>
+				<a href="https://kissmanga.com/Manga/Bleach/">Bleach</a>
+			</li>
+			
+			
+            
+		</ul>
+	<li>
+
+        <li>
+		<a href="#">Television</a>
+		<ul>
+			<li>
+				<a href="https://netflix.com">Netflix</a>
+			</li>
+			<li>
+				<a href="https://youtube.com">Youtube</a>
+			</li>
+			
+		</ul>
+	<li>
+    
+    
+    
+        
+    
+    
+     <li>
+		<a href="#">Media</a>
+		<ul>
+			<li>
+				<a href="https://facebook.com">Facebook</a>
+			</li>
+			<li>
+				<a href="https://twitter.com">Twitter</a>
+			</li>
+            <li>
+				<a href="https://tumblr.com">Tumblr</a>
+			</li>
+            <li>
+				<a href="https://store.steampowered.com">Steam</a>
+			</li>
+            
+		</ul>
+	<li>
+    
+            <li>
+		<a href="#">Misc</a>
+		<ul>
+			<li>
+				<a href="https://nyaa.se">Nyaa.se</a>
+			</li>
+			<li>
+				<a href="http://ci.alamogordo.nm.us/coa/communityservices/library.htm">Library</a>
+			</li>
+			<li>
+				<a href="https://translate.google.com">Translate</a>
+			</li>
+			<li>
+				<a href="https://maxfile.ro/">Img</a>
+			</li>
+			
+		</ul>
+	<li>
+    
+     
+    
+</ul>
+
+
+
+
+</body>
+</html>
